@@ -1,0 +1,10 @@
+{
+  "name": "solid-ts-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mateus Araujo <mateusdearaujo@hotmail.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
