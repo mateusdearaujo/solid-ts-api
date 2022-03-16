@@ -7,6 +7,11 @@ const makeSut = (): AccountMongoRepository => {
 }
 
 describe('Account Mongo Repository', () => {
+  beforeEach(async () => {
+    const accountsCollection = MongoHelper.getCollection('accounts')
+    await accountsCollection.deleteMany({})
+  })
+
   beforeAll(async () => {
     await MongoHelper.connect(process.env.MONGO_URL)
   })
