@@ -6,5 +6,10 @@ module.exports = {
   preset: '@shelf/jest-mongodb',
   transform: {
     '.+\\.ts$': 'ts-jest'
+  },
+  globals: {
+    'ts-jest': {
+      diagnostics: false
+    }
   }
 }
